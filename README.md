@@ -2,15 +2,15 @@
 
 ## Bradley Antholz, Tim Frantz, Oliver Williams
 
-## Project Timeline
+### Project Timeline
 
-> Each stage is a checkpoint in our evolving understanding of the data. Use the space below each milestone to document decisions, insights, or outcomes as they develop.
-
+> This is a timeline of our project, from the first week to the final presentations. Where the events happened are included below. 
+ 
 ---
 
 ### Cleaning the Code  
-Initial cleanup of raw scripts and datasets to ensure readability, consistency, and reliability.
-
+None of us had dealt with this large of a dataset in the past, so we all agreed that cleaning was the first step. We did this separately,
+then combined our efforts into a Google doc. This took up the first two weeks. 
 <!-- Add notes here -->
 
 ---
