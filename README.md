@@ -86,7 +86,9 @@ Our first presentation really leaned into the at-risk data, and focused on the d
 
 We got good feedback from the audience, and would take it into consideration heading into the future. 
 
-> No code files are found in this section.
+#### Related code:
+* Oliver:
+  * zipmap.R
 
 ---
 
@@ -95,20 +97,22 @@ The new data was a game changer. Although we didn't have a prediction model (yet
 
 Bradley was in charge of cleaning the data. He:  
 * Renamed all columns for ease of understanding  
-* Recreated age, income bracket, etc. using the same methods as before  
+* Recreated age, income bracket, etc. using the same methods as before
 
-Once this was done, Tim and Oliver got to work performing trend analysis, seeing what they could get from the new data. Unfortunately, we all realized that the zip code variable was removed with the new data, so we needed a new idea going forward. 
+Once this was done, Tim and Oliver got to work performing trend analysis, seeing what they could get from the new data. With the new data, longitude and langitude coordinates were given for each visit, allowing for the creation of a heat map showing where DMARC Mobile has visited. Unfortunately with this new data, the zip code variable was removed. Because of this we needed a new idea going forward to find where certain populations live. 
 
 #### Related code:
 * Bradley: 
   * new_data.R
+* Oliver:
+  * Mobile_heatmap.R
 
 ---
 
 ### **Shift in Focus**  
 We brainstormed several ideas for how we should proceed, and we landed on the change in demographics from the older data to the newer stuff. This became Tim's niche in the project, going all in on creating graphs and mapping out what we should do with the new data. 
 
-Although we lost data from 50314, we knew that those within the area were coming more recently, but there was a larger group that needed to be addressed: Hispanic/Latino/a. Tim and Oliver found that they were by far the biggest risers from 2018–2019 to 2023–2024, having a significant jump in visitors (Slides 6 and 7 in our presentation). 
+Although we lost data from 50314, we knew that those within the area were coming more recently, but there was a larger group that needed to be addressed: Hispanic/Latino populations. Tim and Oliver found that they were by far the biggest risers from 2018–2019 to 2023–2024, having a significant jump in visitors (Slides 6 and 7 in our presentation). 
 
 The group decided that it was best to focus on the fastest growing demographics for the remainder of the project, answering the question: *Who is coming more recently?*
 
@@ -127,10 +131,10 @@ The group decided that it was best to focus on the fastest growing demographics 
     * predictive_modelling.R  
     * zip_map_final.R
 
-*Prediction:* Although we don't have data for each zip code from early 2024 onward, Oliver was able to map out which areas will have repeat visitors, based off the old data and using the same prediction model as above. Slide 8.  
+*Prediction:* Although we don't have data for each zip code from early 2024 onward, Oliver was able to map out where leading demographics going to DMARC were populated, based off ACS data. Slide 8.  
 * Code:
   * Oliver:
-    * Mobile_heatmap.R
+    * acs_zip_map.R
 
 ---
 
@@ -153,4 +157,4 @@ The group decided that it was best to focus on the fastest growing demographics 
   * Creating the prediction models using the new data  
   * Putting together the final presentation
 
-> Special thank you to both Professor Manley and Lendie. Your feedback was critical to our progress in the course.
+> Special thank you to both Professor Manley and Dr. Follett. Your feedback was critical to our progress in the course.
