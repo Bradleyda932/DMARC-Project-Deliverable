@@ -9,8 +9,7 @@
 ---
 
 ### **Cleaning the Code**  
-None of us had dealt with a dataset this large before, so we all agreed that cleaning was the first step. We did this separately,  
-then combined our efforts into a Google Doc. This took up the first two weeks. Of course, we never stopped cleaning data when we encountered issues, so all of our files have elements of cleaning in them.
+None of us had dealt with a dataset this large before, so we all agreed that cleaning was the first step. We did this separately, then combined our efforts into a Google Doc. This took up the first two weeks. Of course, we never stopped cleaning data when we encountered issues, so all of our files have elements of cleaning in them.
 
 The point of cleaning was to make the data more usable and universal (for example, using age instead of date of birth), but also more understandable to the audience. Some examples of things we changed include: 
 
