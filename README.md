@@ -131,7 +131,7 @@ The group decided that it was best to focus on the fastest growing demographics 
 *Prediction:* Although we don't have data for each zip code from early 2024 onward, Oliver was able to map out which areas will have repeat visitors, based off the old data and using the same prediction model as above. Slide 8.  
 * Code:
   * Oliver:
-    * zip_map_final.R
+    * Mobile_heatmap.R
 
 ---
 
