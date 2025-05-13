@@ -4,7 +4,7 @@
 
 ## **Project Timeline**
 
-> This is a timeline of our project, from the first week to the final presentations. The folders are our own coding files, and each file is mentioned.
+> This is a timeline of our project, from the first week to the final presentations. Each folder found in the repo is our own code, organized by who created each file. They are all mentioned below at some point. 
 
 ---
 
