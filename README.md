@@ -107,29 +107,55 @@ Once this was done, Tim and Oliver got to work performing trend analysis, seeing
 
 ---
 
-### **Shift in Focus: Zip Codes → Change Over Time**  
-Pivoted analysis from location-based to temporal trends in visitor data and pantry services.
+### **Shift in Focus**  
+We brainstormed several ideas for how we should proceed, and we landed on the change in demographics from the older data to the newer stuff. This became Tim's niche in the project, going all in on creating graphs and mapping out what we should do with the new data. 
 
----
+Although we lost data from 50314, we knew that those within the area were coming more recently, but there was a larger group that needed to be addressed: Hispanic/Latino/a. Tim and Oliver found that they were by far the biggest risers from 2018-2019 to 2023-2024, having a significant jump in visitors (Slides 6 and 7 in our presentation). 
 
-### **Modeling the Future**  
-Began predictive modeling to anticipate future needs and demand.
+The group decided that it was best to focus on the fastest growing demographics for the remainder of the project, answering the question: *Who is coming more recently?*
 
----
-
-### **How We Can Help DMARC**  
-Identified actionable strategies to support DMARC’s mission based on data-driven insights.
+#### Related code:
+* Tim:
+  * yearly_and_monthly_comparisons.R
 
 ---
 
 ### **Final Presentation**  
-Delivered conclusions and recommendations to DMARC board members and staff.
+> The sections from getting the new data until the end all have a slide in the final presentation, so we will discuss them all here.
+
+*Modeling:* Oliver created a model that forecasts expected 2025 visitors, and it shows that the record number of visitors will continue to increase, with new peaks late in the year. Slide 5. 
+* Code:
+  * Oliver:
+    * predictive_modelling.R
+    * zip_map_final.R
+    
+
+*Prediction:* Although we don't have data for each zip code from early 2024 onward, Oliver was able to map out which areas will have repeat visitors, based off the old data and using the same prediction model as above. Slide 8.
+* Code:
+  * Oliver:
+    * zip_map_final.R
+    
+
 
 ---
 
-## **Technologies Used**
+## Other areas of interest
 
-- R / Python (for data cleaning and analysis)  
-- ggplot2, matplotlib, seaborn (for visualizations)  
-- GeoJSON, Leaflet, Mapbox (for geographic mapping)  
-- GitHub (version control and collaboration)
+Roles within the group:
+
+* Bradley: 
+  * Pulling zip code data and putting together *many* graphs to visualize trends (around 118 in all)
+  * Creating this file, thank you to Tim & Oliver for sending me their code
+  * Cleaning the new data
+ 
+* Tim:
+  * Focusing heavily on the new data, working with Oliver on his models and heat maps
+  * Cleaning the original data
+  * Making graphs and creating comparisons via R code
+
+* Oliver:
+  * Creating the heat maps used in both the first and final presentations
+  * Creating the prediction models using the new data
+  * Putting together the final presentation
+
+> Special thank you to both Professor Manley and Lendie. Your feedback was critical to our progress in the course. 
