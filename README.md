@@ -9,13 +9,14 @@
 ---
 
 ### **Cleaning the Code**  
-None of us had dealt with a dataset this large before, so we all agreed that cleaning was the first step. We did this separately, then combined our efforts into a Google Doc. This took up the first two weeks. Of course, we never stopped cleaning data when we encountered issues, so all of our files have elements of cleaning in them.
+None of us had dealt with a dataset this large before, so we all agreed that cleaning was the first step. We did this separately, then combined our efforts into a Google Doc. This took up the first two weeks. We continued with the cleaning process as we encountered issues, so all of our files have elements of cleaning in them.
 
-The point of cleaning was to make the data more usable and universal (for example, using age instead of date of birth), but also more understandable to the audience. Some examples of things we changed include: 
+The point of cleaning was to make the data more usable and universal (for example, using age instead of date visited), but also more understandable to the audience. Some examples of things we changed include: 
 
-* Added age using dob: age works better for trend analysis  
-* Added income brackets from annual income: makes it better for graphs  
-* Removed lnm and housing type variables: lnm was too revealing and housing_type was repetitive with homelessness and housing_status  
+* Added age using the date the visitor attended: age works better for trend analysis  
+* Added income bracket and federal poverty level bracket variables: worked better for visualizations
+* Removed lnm and housing type variables: lnm was too revealing and housing_type was repetitive with homelessness and housing_status
+* Removed nonsensical outliers and dealt with "Unknown" and "Not Selected" variables accordingly: This was done individually on each variable 
 * Grouped pantry locations together: Instead of 90 locations, we grouped them into 17–20
 
 These additions greatly helped our early analysis of the data, and some made it into our final presentation (income_bracket).
@@ -60,7 +61,7 @@ After cleaning, further analysis pointed out that there was a set of zip codes i
 ---
 
 ### **ACS Data Introduced (Heat Map Made)**  
-Professor Manley introduced us to the ACS data, and Oliver immediately got to work, creating 4 R files in all. He found the top at-risk zip codes in Des Moines, and I picked the top 12 areas (50137 has no entries in the dataset, so it was removed), sorted into the three categories. This really helped us understand which zip codes we should focus on, and it was *very* clear that 50314 and 50316 need help. 
+Professor Manley introduced us to the ACS data, and Oliver began working on this, creating 4 R files in all. He found the top at-risk zip codes in Des Moines, and we picked the top 12 areas (50137 has no entries in the dataset, so it was removed), sorted into the three categories. This really helped us understand which zip codes we should focus on, and it was *very* clear that zip codes 50314 and 50316 required the greatest attention. 
 
 #### Files used:
 * Oliver:
@@ -81,10 +82,10 @@ Professor Manley introduced us to the ACS data, and Oliver immediately got to wo
 Our first presentation really leaned into the at-risk data, and focused on the demographics of 50314 (1st), 50316 (2nd), 50265 (15th) and 50047 (17th). Here are some highlights from it:
 
 * Bradley pointed out that, among the 11 zip codes, 50314 was the only predominantly Black community — a great candidate for further analysis  
-* Tim did the behind-the-scenes work and made most of the graphs for the presentation  
+* Tim made the visualizations that highlighted key demographic insights 
 * Oliver's heat map was a great shock-factor, as it showed 88% of the population of 50314 had been to a food pantry
 
-We got good feedback from the audience, and would take it into consideration heading into the future. 
+We recieved great feedback from the audience, and would take it into consideration heading into the future. 
 
 #### Related code:
 * Oliver:
@@ -99,7 +100,7 @@ Bradley was in charge of cleaning the data. He:
 * Renamed all columns for ease of understanding  
 * Recreated age, income bracket, etc. using the same methods as before
 
-Once this was done, Tim and Oliver got to work performing trend analysis, seeing what they could get from the new data. With the new data, longitude and langitude coordinates were given for each visit, allowing for the creation of a heat map showing where DMARC Mobile has visited. Unfortunately with this new data, the zip code variable was removed. Because of this we needed a new idea going forward to find where certain populations live. 
+Once this was done, Tim and Oliver got to work performing trend analysis, seeing what they could get from the new data. With the new data, longitude and latitude coordinates were given for each visit, allowing for the creation of a heat map showing where DMARC Mobile has visited. Unfortunately with this new data, the zip code variable was removed. Because of this we needed a new idea going forward to find where certain populations live. 
 
 #### Related code:
 * Bradley: 
@@ -110,7 +111,7 @@ Once this was done, Tim and Oliver got to work performing trend analysis, seeing
 ---
 
 ### **Shift in Focus**  
-We brainstormed several ideas for how we should proceed, and we landed on the change in demographics from the older data to the newer stuff. This became Tim's niche in the project, going all in on creating graphs and mapping out what we should do with the new data. 
+We brainstormed several ideas for how we should proceed, and we landed on the idea of comparing demographics from the older data to the new dataset. This became Tim's niche in the project, going all in on creating graphs and mapping out how we can turn those findings into actionable advice for DMARC.
 
 Although we lost data from 50314, we knew that those within the area were coming more recently, but there was a larger group that needed to be addressed: Hispanic/Latino populations. Tim and Oliver found that they were by far the biggest risers from 2018–2019 to 2023–2024, having a significant jump in visitors (Slides 6 and 7 in our presentation). 
 
@@ -123,7 +124,7 @@ The group decided that it was best to focus on the fastest growing demographics 
 ---
 
 ### **Final Presentation**  
-> The sections from getting the new data until the end all have a slide in the final presentation, so we will discuss them all here.
+> For this final presentation, we wanted to find which groups saw the largest recent increases in visiting food pantries. Then, by sorting on those specific demographics, we could predict which areas of Des Moines will have heightened need in the future. The sections from getting the new data until the end all have a slide in the final presentation, so we will discuss them all here. 
 
 *Modeling:* Oliver created a model that forecasts expected 2025 visitors, and it shows that the record number of visitors will continue to increase, with new peaks late in the year. Slide 5.  
 * Code:
@@ -144,7 +145,7 @@ The group decided that it was best to focus on the fastest growing demographics 
 
 * Bradley: 
   * Pulling zip code data and putting together *many* graphs to visualize trends (around 118 in all)  
-  * Creating this file — thank you to Tim & Oliver for sending me their code  
+  * Creating this README file — thank you to Tim & Oliver for sending me their code  
   * Cleaning the new data
  
 * Tim:
