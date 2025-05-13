@@ -7,6 +7,7 @@
 > This is a timeline of our project, from the first week to the final presentations. The folders are our own coding files, and each file mentioned
 
 ---
+
 ### **Cleaning the Code**  
 None of us have dealt with this large of a dataset in the past, so we all agreed that cleaning was the first step. We did this separately,  
 then combined our efforts into a Google Doc. This took up the first two weeks. Of course, we never stopped cleaning data when we encountered issues, so all of our files have elements of cleaning in it.
@@ -28,6 +29,7 @@ These additions greatly helped our early analysis of the data, and some made it 
   * clean_dmarc_data.R
 
 ---
+
 ### **Looking Deeper into Zip Codes**  
 After cleaning, further analysis pointed out that there was a set of zip codes in the Des Moines area, specifically 50314, 50316, 50265 and the Pleasant Hill area. There was a growing need for basic resources in those areas, and yet there is almost no pantries in any of those areas (50314 and 50265 have 0, 50316 has 1, the zip codes in Pleasant Hill have 1 combined). We wanted to focus on people outside of major population hubs, as these people tend to be closer to the national averages, not contributing much to what we're after. As such, we broke down the areas into three categories, outlined below.
 
@@ -56,6 +58,7 @@ After cleaning, further analysis pointed out that there was a set of zip codes i
 * Bradley: 
   * zip_code_data.R
 > Other zip_code files are mentioned in the next few sections
+
 ---
 
 ### **ACS Data Introduced (Heat Map Made)**  
@@ -89,13 +92,18 @@ We got good feedback from the audience, and would take it into consideration hea
 
 ---
 
-### **Further Zip Code Analysis & Demographic Targeting**  
-Drilled down into specific zip codes to identify distinct visitor demographics and behavior patterns.
-
----
-
 ### **New Data Introduced**  
-Incorporated additional DMARC datasets to expand scope and enhance insights.
+The new data was a gamechanger. Although we didn't have a prediction model (yet), we were very eager to get our hands on the new data. Once we did, we followed a similar pattern to the beginning of the semester. 
+
+Bradley was in charge of cleaning the data, he:
+* Renamed all columns for ease of understanding
+* Recreated age, income bracket, etc using the same methods as before
+
+Once this was done, Tim and Oliver got to work performing trend analysis, seeing what they could get from the new data. Unfortunately, we all realized that the zip code variable was removed with the new data, so we needed a new idea going forward. 
+
+#### Related code:
+* Bradley: 
+  * new_data.R
 
 ---
 
